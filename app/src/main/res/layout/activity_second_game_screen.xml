@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background"
+    tools:context=".game_ui.SecondGameScreenActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a"
+        android:tag="a"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b"
+        android:tag="b"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image1" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/c"
+        android:tag="c"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image2" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/d"
+        android:tag="d"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image3" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/e"
+        android:tag="e"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+    <TextView
+        android:id="@+id/textGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="@string/guess_your_champion"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image5" />
+
+    <ImageView
+        android:id="@+id/guess1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/a"
+        android:tag="a"
+        app:layout_constraintEnd_toStartOf="@id/guess2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textGuess" />
+
+    <ImageView
+        android:id="@+id/guess2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/b"
+        android:tag="b"
+        app:layout_constraintEnd_toStartOf="@id/guess3"
+        app:layout_constraintStart_toEndOf="@id/guess1"
+        app:layout_constraintTop_toBottomOf="@id/textGuess" />
+
+    <ImageView
+        android:id="@+id/guess3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/c"
+        android:tag="c"
+        app:layout_constraintEnd_toStartOf="@id/guess4"
+        app:layout_constraintStart_toEndOf="@id/guess2"
+        app:layout_constraintTop_toBottomOf="@id/textGuess" />
+
+    <ImageView
+        android:id="@+id/guess4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/d"
+        android:tag="d"
+        app:layout_constraintEnd_toStartOf="@id/guess5"
+        app:layout_constraintStart_toEndOf="@id/guess3"
+        app:layout_constraintTop_toBottomOf="@id/textGuess" />
+
+    <ImageView
+        android:id="@+id/guess5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/e"
+        android:tag="e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textGuess" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

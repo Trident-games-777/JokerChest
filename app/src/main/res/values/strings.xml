@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Joker Chest</string>
+    <string name="facebook_app_id">1604254613281683</string>
+    <string name="facebook_client_token">54ca5bcc99b0962b9231ef4692c89588</string>
+    <string name="start">Start</string>
+    <string name="guess_your_champion">Guess your champion</string>
+    <string name="go_next">Go next</string>
+</resources>
